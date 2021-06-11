@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-n2@#!3xluwbya-0-iu(f)&u7s!zi8-jkm%(-1yyev2w!a_wsj1'
+SECRET_KEY = 'django-insecure-^)6exnlwrk0r0f0zo$2dlkfnd3cj+*e!q%2^c4%lpu$77-4!t7tohi&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tutorial'
+    'tutorial',
 ]
 
 MIDDLEWARE = [
@@ -51,9 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'tutorial.urls'
-
-print("Template Folder ", os.path.join(BASE_DIR,"templates"))
-
+# print("Templatess   ",os.path.join(BASE_DIR,"templates")   )
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -120,11 +118,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/' # the path in url
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+STATIC_URL = '/static/'
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR,"static")
 ]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
